@@ -34,3 +34,20 @@ function analyzeDecision() {
 
   document.getElementById("decisionResult").innerText = responses[random];
 }
+function typeMessage() {
+  const message = "You are not lost. You are avoiding the path you fear.";
+  let i = 0;
+  const speed = 40;
+
+  document.getElementById("aiText").innerText = "";
+
+  function typing() {
+    if (i < message.length) {
+      document.getElementById("aiText").innerText += message.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+
+  typing();
+}
