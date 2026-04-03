@@ -51,3 +51,23 @@ function typeMessage() {
 
   typing();
 }
+let truths = [];
+
+function changeMode(mode) {
+  if (mode === "normal") {
+    truths = [
+      "You need more focus.",
+      "You're doing okay, but not enough."
+    ];
+  } else if (mode === "harsh") {
+    truths = [
+      "You're lazy. Admit it.",
+      "No one is stopping you except you."
+    ];
+  } else {
+    truths = [
+      "You can change everything today.",
+      "Start now. Not tomorrow."
+    ];
+  }
+}
