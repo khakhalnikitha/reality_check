@@ -71,3 +71,9 @@ function changeMode(mode) {
     ];
   }
 }
+function generateTruth() {
+  document.getElementById("clickSound").play();
+
+  const random = Math.floor(Math.random() * truths.length);
+  document.getElementById("truth").innerText = truths[random];
+}
