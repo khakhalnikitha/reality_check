@@ -20,3 +20,17 @@ function answer(choice) {
 
   document.getElementById("result").innerText = resultText;
 }
+function analyzeDecision() {
+  const input = document.getElementById("decisionInput").value;
+
+  let responses = [
+    "You already know the answer. You're just avoiding it.",
+    "You're choosing comfort over growth.",
+    "Stop overthinking. Take action.",
+    "This isn't confusion. It's fear."
+  ];
+
+  const random = Math.floor(Math.random() * responses.length);
+
+  document.getElementById("decisionResult").innerText = responses[random];
+}
