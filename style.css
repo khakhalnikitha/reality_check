@@ -1,1 +1,21 @@
+body {
+  background-color: black;
+  color: red;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 100px;
+}
 
+button {
+  background: red;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
